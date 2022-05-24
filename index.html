@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Slideshow container */
+      .slideshow-container {
+        
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        margin-top: 30px;
+      }
+
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size:35px;
+        background-color: #c5bdbd25;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active,
+      .dot:hover {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <svg width="400" height="100">
+        <rect width="400" height="100" 
+        style="fill:rgba(208, 181, 230, 0.096);stroke-width:10;
+        stroke:rgba(34, 0, 226, 0.329)" />
+        Sorry, your browser does not support inline SVG.
+        <text fill="white" font-size="35" font-family="Verdana" x="60" y="60">Pajisje Gaming</text>
+    </svg>
+    </header>
+      <nav>
+      <ul>
+        <li><a href="index.html">Ballina</a></li>
+        <li><a href="#brendet">Brendet e pajisjeve</a></li>
+        <li><a href="#pajisjet">Pajisjet</a></li>
+        <li><a href="contact.html">Kontakti</a></li>
+      </ul>
+    </nav>
+
+<!-- Slideshow container -->
+
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/steelseries.jpg" style="width:100%">
+      <div class="text">Steelseries Brand</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images//logitech.jpg" style="width:100%">
+      <div class="text">Logitech Brand</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images//razer.jpg" style="width:100%">
+      <div class="text">Razer Brand</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+
+
+
+  <!-- Brendet e pajisjeve -->
+
+
+<section class="container" id="brendet">
+  <div class="inline">
+    <h2>SteelSeries</h2>
+    <iframe width="633" height="400" src="https://www.youtube.com/embed/CBdPztx-0S8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="inline">
+    <h2>Logitech</h2>
+    <video width="633" height="400" controls>
+      <source src="video/logitech.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="inline">
+    <h2>Razer</h2>
+    <iframe width="633" height="400" src="https://www.youtube.com/embed/EerI8DPogkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div> 
+</section>
+
+
+<section class="pajisjet" id="pajisjet">
+  <div class="inline">
+      <table class="tabela1" style="overflow-x:auto">
+        <tr>
+            <th><img src="images/maus-steel.jpg" width="300" style="margin-top:100px;"></th>
+            <th>
+              <h3 style="margin-top:10px;">Maus SteelSeries Aerox 5</h3>
+              <h3 style="margin-top:10px;">Çmimi: 60&euro;</h3>
+              <p style="font-size:10px; margin-top:10px;">Ky është një maus gaming ultra i lehtë me një ndjeshmëri prej 100 - 18,000 CPI (hedhje prej 100 CPI), përshpejtim prej 40 G dhe përgjigje prej 1 ms. Nuk ka përshpejtim harduerik. Është i pajisur me 9 butona të programueshëm dhe switcha mekanikë me një jetëgjatësi prej 80 milionë klikimesh. Ofron nivelin e mbrojtjes IP54. Ka 3 zona RGB LED.</p>
+              <br>
+              <button type="submit" class="porosite">Blejë</button>
+            </th>
+        </tr>
+        <tr>
+            <th><img src="images/degjuse-steel.jpg" width="300" style="margin-top:100px;"></th>
+            <th>
+              <h3 style="margin-top:10px;">Kufje SteelSeries Arctis 5</h3>
+              <h3 style="margin-top:10px;">119.50&euro;</h3>
+              <p style="font-size:10px; margin-top:10px;">Kufjet SteelSeries Arctis 5 arrijnë t'i plotësojnë të gjithë pritjet dhe kërkesat e gamerave pasionant. Zëri kristal i pastër dhe i fuqishëm do iu sjell eksperiencë mahnitëse të videolojërave tuaja. Mbajtja e tyre është e rehatshme dhe nuk do të keni dhimbje të veshëve edhe pas shumë orëve të përdorimit. Gjithashtu ka drita RGB dhe mikrofon portativ që i kompleton kufjet në çdo aspekt.</p>
+              <button type="submit" class="porosite">Blejë</button>
+            </th>
+              <tr>
+                  <th><img src="images/tastiere-steelseries.png" width="350" style="margin-top:20px; "></th>
+                  <th>
+                    <h3 style="margin-top:10px;">Tastierë SteelSeries Apex 3</h3>
+                    <h3 style="margin-top:10px;">Çmimi: 76.50 &euro;</h3>
+                    <p style="font-size:10px; margin-top:10px;">Tastiera është e pajisur me çelësa me fërkim të ulët për përdorim pothuajse të padëgjueshëm dhe qëndrueshmëri të pakrahasueshme. Funksionaliteti i tyre është i garantuar për më shumë se 20 milion goditje. Tastiera ka një aksesor të thjeshtë dhe të sigurt magnetik që ofron mbështetje për tërë dorën.</p>
+                    <button type="submit" class="porosite">Blejë</button>
+                  </th>
+              </tr>
+        </tr>
+      </table>
+  </div>
+
+
+  <div class="inline">
+    <table class="tabela2">
+      <tr>
+          <th><img src="images/maus-logitech.png" width="180" style="margin-top:100px;"></th>
+          <th>
+            <h3 style="margin-top:10px;">Maus Logitech G102 Lightsync</h3>
+            <h3 style="margin-top:10px;">Çmimi: 24.50&euro;</h3>
+            <p style="font-size:10px; margin-top:10px;">Ky maus lojërash për djathtakë ka sensor optik që siguron saktësi të përsosur. Shijoni rehatinë e tij dhe fitoni çdo luftë. Por kjo nuk është e gjitha! Logitech G102 Lightsync përmban 6 butona, ndjeshmëri të zgjedhshme në rangun 8000 DPI</p>
+            <button type="submit" class="porosite">Blejë</button>
+          </th>
+      </tr>
+      <tr>
+          <th><img src="images/degjuse-logitech1.png" width="300" style="margin-top:100px;"></th>
+          <th>
+            <h3 style="margin-top:10px;">Kufje Logitech G Pro X</h3>
+            <h3 style="margin-top:10px;">Çmimi: 114.50&euro;</h3>
+            <p style="font-size:10px; margin-top:10px;">Kufje cilësore për lojëra me mikrofon Logitech G Pro X të cilat ju sjellin rehati të vërtetë, ndërtim të lehtë dhe fuqi me një interval frekuencash 20-20 000 kHz nga rezistenca prej 35 ohms dhe një ndjeshmëri prej 91,7 db SPL. Teknologjia e mikrofonit BLUE VO! CE ofron një gamë të filtrave të zërit në kohë reale për të zvogëluar zhurmën, shtuar kompresimin dhe për të zvogëluar depërtimin e sibilancës.</p>
+            <button type="submit" class="porosite">Blejë</button>
+          </th>
+      </tr>
+      <tr>
+          <th><img src="images/tastiere-logitech.png" width="400" style="margin-top:20px;"></th>
+          <th>
+            <h3 style="margin-top:10px;">Tastierë Logitech G513 Carbon</h3>
+            <h3 style="margin-top:10px;">Çmimi: 162.50&euro;</h3>
+            <p style="font-size:10px; margin-top:10px;">Tastiera Logitech G513 është ëndrra e secilit person të apasionuar pas lojërave. Është ideale për përdoruesit të cilët dëshirojnë të luajnë me lëvizje dhe strategji të ndryshme. Shpejtësia e përgjigjes së tastierës me rastin e shtypjes së tastit është 1 ms. Poashtu kjo tastierë u mundëson që të shtypni shumë taste në të njëjtën kohë dhe ka gjitësej 26 taste dhe dritë RGB.</p>
+            <button type="submit" class="porosite">Blejë</button>
+          </th>
+      </tr>
+    </table>
+
+  </div>
+  <div class="inline">
+    <table class="tabela3">
+      <tr>
+          <th><img src="images/maus-razer.png" width="350" style="margin-top:100px;"></th>
+          <th>
+            <h3 style="margin-top:10px;">Maus Razer DeathAdder Elite</h3>
+            <h3 style="margin-top:10px;">Çmimi: 34.50&euro;</h3>
+            <p style="font-size:10px; margin-top:10px;">Mausi i lojërave Razer DeathAdder Essential është krijuar për dorën e djathtë. Ka një sensor me një ndjeshmëri deri në 6400 DPI. Sensori trajton nxitimin deri në 30 G, shpejtësinë 220 inç në sekondë dhe koha e përgjigjes është 1000Hz / 1ms.</p>
+            <button type="submit" class="porosite">Blejë</button>
+
+          </th>
+      </tr>
+      <tr>
+          <th><img src="images/degjuse-razer.png" width="300" style="margin-top:100px;"></th>
+          <th>
+            <h3 style="margin-top:10px;">Kufje Razer BlackShark V2 Pro - Six Siege Special Edition</h3>
+            <h3 style="margin-top:10px;">Çmimi: 249.50&euro;</h3>
+            <p style="font-size:10px; margin-top:10px;">Ky është një maus gaming ultra i lehtë me një ndjeshmëri prej 100 - 18,000 CPI (hedhje prej 100 CPI), përshpejtim prej 40 G dhe përgjigje prej 1 ms. Nuk ka përshpejtim harduerik. Është i pajisur me 9 butona të programueshëm dhe switcha mekanikë me një jetëgjatësi prej 80 milionë klikimesh. Ofron nivelin e mbrojtjes IP54. Ka 3 zona RGB LED.</p>
+            <button type="submit" class="porosite">Blejë</button>
+          </th>
+      </tr>
+      <tr>
+          <th><img src="images/tastiere-razer.png" width="300" style="margin-top:70px;"></th>
+          <th>
+            <h3 style="margin-top:10px;">Tastierë Razer Huntsman V2 Tenkeyless</h3>
+            <h3 style="margin-top:10px;">Çmimi: 144.50&euro;</h3>
+            <p style="font-size:10px; margin-top:10px;">Tastiera është e pajisur me taste me dy shtresa të bëra nga plastika PBT, e cila është më e fortë dhe më e qëndrueshme se ABS. Tastet janë rezistent ndaj konsumimit dhe zbehjes. Tastiera Razer Huntsman V2 është gjithashtu e pajisur me akustikë të përmirësuar, brenda kasës është një shtresë shkumë e veçantë, e cila absorbon të gjithë tingujt që mund të ndodhin kur hiqen tastet.</p>
+            <button type="submit" class="porosite">Blejë</button>
+          </th>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section class="audio">
+
+<audio controls>
+  <source src="audio/mp3.mp3" type="audio/mp3">
+</audio>
+</section>
+
+
+
+
+
+
+
+<!-- Footer -->
+
+
+<footer>
+  <h2>Copyright &copy;  Pajisje Gaming</h2> <br>
+  <h4>Referencat:</h4>
+  <div class="referencat">
+      <a class="linki" href="https://gjirafa50.com/">Pajisjet |</a>
+      <a class="linki" href="https://goo.gl/maps/QJtj2mf3wwEMABxH7">Map lokacioni |</a> 
+      <a class="linki" href="https://www.wallpaperflare.com/">Slider fotot |</a> 
+  </div>  
+</footer>
+
+
+
+
+
+  <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+body{
+    /* background-image: url('foto/background3.png'); */
+    background-color: rgba(0, 0, 0, 0.877);
+}
+header{
+    width: 100%;
+    height: 100px;
+}
+svg {
+    position: relative;
+    float:left;
+    left: 39.5%;
+    
+}
+
+nav {
+    background-color: rgba(180, 145, 236, 0.178);
+    display: flex;
+    height: 75px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;    
+}
+nav ul li {
+    height: 40px;
+    padding: 10px; 
+}
+nav ul li a {
+    background-color: rgba(208, 181, 230, 0.096);
+    border: 1px solid rgb(34, 0, 226);
+    padding: 15px;
+    margin: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: Verdana;
+    font-weight: bold;
+    border-radius: 5px;
+}
+nav a:hover{
+    background-color: rgba(222, 176, 240, 0.842);
+}   
+
+form{ 
+    position: relative;
+    left: 38%;
+    border: 1px solid rgb(34, 0, 226);
+    padding: 80 40px;
+    text-align: center;
+    box-sizing: border-box; 
+    font-family: Verdana;
+    width: 500px;
+    border-radius: 3px;
+    margin-top: 50px;
+}
+
+textarea{
+    font-family:sans-serif;
+    margin-left: 55px;
+    width: 400px;
+    height: 100px;
+    display: block;
+    border: none;
+    background:rgba(208, 181, 230, 0.096);
+}
+input {
+    margin-top: 15px;
+    font-family:sans-serif;
+    margin-left: 55px;
+    width: 400px;
+    height: 30px;
+    display: block;
+    border: none;
+    background:rgba(208, 181, 230, 0.096);
+}
+button {
+    cursor: pointer;
+    font-family:  sans-serif;
+    border: none;
+    background:rgba(208, 181, 230, 0.096);
+    border-radius: 3px;
+    padding: 6px;
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    color: black;
+    border: 1px solid rgb(34, 0, 226);
+    margin-bottom: 10px;
+}
+button:hover{
+    background-color:rgba(222, 176, 240, 0.842) ;
+}
+.kontakti{
+    text-align: center;
+    color: white;
+    margin-top: 35px;
+    font-size: 34px;       
+}
+footer {
+    width: 100%;
+    height: 100px;
+    color:white;
+    align-self: center;
+    border-top: 1px solid white; 
+    margin-top: 25px;
+}
+footer h2 {
+    text-align: center;
+    margin-top: 35px;
+}
+footer h4 {
+    text-align: center;
+}
+h4 a {
+    color: white;
+    margin:0% auto;
+    width:100%;
+    font-size:13px;
+}
+.referencat , a{
+    text-align: center;
+    color: white;
+}
+
+
+/* Brendet e pajisjeve */
+
+.container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+div.inline {
+    float:left; 
+    width: 33.33%;
+    color:white;
+}
+
+div.inline h2{
+    text-align: center;
+}
+
+.inline table{
+    width: 100%;
+}
+
+audio{
+    position: relative;
+    right: 25%;
+    margin-top: 150px;
+}
+
+.porosite{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: rgb(168, 168, 223);
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    border:none;
+    color: rgb(168, 47, 47); 
+}
+
+.porosite:hover{
+    background-color: rgb(187, 202, 193);
+}
+
+.stars{
+    margin-right:55px;
+}
